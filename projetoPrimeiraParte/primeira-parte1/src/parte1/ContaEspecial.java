@@ -1,16 +1,16 @@
 package parte1;
 
 public class ContaEspecial extends Conta {
-    private String titular;
+    private double limite;
 
-    public ContaEspecial(int numeroConta, double saldo, String titular) {
+    public ContaEspecial(int numeroConta, double saldo, double limite) {
         super(numeroConta, saldo);
-        this.titular = titular;
+        this.limite = limite;
     }
 
     @Override
     public String toString() {
-        return super.toString() + " : " + titular;
+        return super.toString() + " : " + limite;
     }
 
 }
